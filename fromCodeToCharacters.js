@@ -3,8 +3,10 @@ const SCRIPTS = require("../SCRIPTS");
 /**
  *
  * @param {*} code
- * this function uses method "some" to output the
- *  corresponding names from the array
+ * this function uses method "some"
+ * It takes a test function and return true for any of the
+ * element in the array
+ *
  *
  */
 function someCharacters(code) {
@@ -20,5 +22,6 @@ function someCharacters(code) {
   return null;
 }
 
+export default someCharacters;
 console.log(someCharacters(121));
 //=> {name: 'Latin', ranges: Array(31), direction: 'ltr',... ]
